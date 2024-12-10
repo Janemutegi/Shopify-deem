@@ -1,0 +1,20 @@
+h1{
+    color: #ff006f;
+    text-align: center;
+    background-color: blanchedalmond;
+    line-height: 100px;
+    text-shadow: 12px 4px 12px yellow;
+    font-size: 80px;
+}
+h1:hover{
+    background-color: yellow;
+}
+.deem{
+    background-image: url("static/img/gauge.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 80%;
+}
+#login:hover{
+    background-color: dodgerblue;
+}

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+<img src="{% static 'img/img1.png' %}" alt="">
+<!-- Section: Design Block -->
+
+<section class="section text-center">
+  <!-- Background image -->
+  <div class="p-5 bg-image" style="
+        background-image: url('https://mdbootstrap.com/img/new/textures/full/171.jpg');
+        height: 300px;
+        "></div>
+  <!-- Background image -->
+
+  <div class="card mx-4 mx-md-5 shadow-5-strong bg-body-tertiary" style="
+        margin-top: -100px;
+        backdrop-filter: blur(30px);
+        ">
+    <div class="card-body py-5 px-md-5">
+
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+          <h2 class="fw-bold mb-5" style="color: #121112;font-size: 35px;text-align: start; padding: 20px; ">Sign up now</h2>
+          <form action="{% url 'login' %}" method="POST"  style="color: #121112;font-size: 30px;text-align: center">
+              {% csrf_token %}
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row">
+              <div class="col-md-6 mb-4">
+                <div data-mdb-input-init class="form-outline">
+                   <label class="form-label" for="form3Example1">First name</label>
+                  <input type="text" name="firstname" id="form3Example1" class="form-control" />
+
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div data-mdb-input-init class="form-outline">
+                  <label class="form-label" for="form3Example2">Last name</label>
+                  <input type="text" name="lastname" id="form3Example2" class="form-control" />
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="form3Example3">Email address</label>
+              <input type="email" name="email" id="form3Example3" class="form-control" />
+
+            </div>
+
+            <!-- Password input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+               <label class="form-label" for="form3Example4">Password</label>
+              <input type="password" name="password" id="form3Example4" class="form-control" />
+
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-check d-flex justify-content-center mb-4">
+              <label class="form-check-label" for="newsletter">
+              <input class="form-check-input me-2" type="checkbox" value="" id="newsletter" checked />
+
+                Subscribe to our newsletter
+              </label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block mb-4">
+              Sign up
+            </button>
+
+
+            <!-- Register buttons -->
+           <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="https://x.com/home">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="https://www.linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="https://www.youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+
+
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Section: Design Block -->
+
+
+
+</body>
+</html>
