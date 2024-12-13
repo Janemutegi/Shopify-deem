@@ -6,23 +6,24 @@ from shopifyapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index, name='subscribe'),
+    path('migration_reset/', views.migration_reset, name='migration_reset_instructions'),
     path('home/', views.home, name='home'),
-    path('cart/', views.cart, name='cart'),
+   # path('cart/', views.cart, name='cart'),
     path('contact/', views.contact, name='contact'),
-    path('checkout/', views.checkout, name='checkout'),
-    path('detail/', views.detail, name='detail'),
-    path('shop/', views.shop, name='shop'),
-    path('newsletter/', views.registers, name='newsletter'),
-    path('search/', views.search, name='search'),
+   # path('checkout/', views.checkout, name='checkout'),
+  #  path('detail/', views.detail, name='detail'),
+ #   path('shop/', views.shop, name='shop'),
+#    path('newsletter/', views.registers, name='newsletter'),
+#    path('search/', views.search, name='search'),
     path('base/', views.base, name='base'),
     path('', views.logins, name='login'),
-    path('products/', views.products, name='products'),
+
     path('about/', views.about, name='about'),
     path('login/login_success/', views.login_success, name='login_success'),
 
-    path('creates/', views.create_form, name='creates'),
 
-    path('create_unsuccessful/', views.create_unsuccessful, name='create_unsuccessful'),
+
+   # path('create_unsuccessful/', views.create_unsuccessful, name='create_unsuccessful'),
 
     path('report/', views.report, name='report'),
 
@@ -34,9 +35,6 @@ urlpatterns = [
 
 
 
-
-    path('showimage/', views.show_image, name='image'),
-    path('imagedelete/<int:id>', views.imagedelete),
 
   #  path('pay/', views.pay, name='pay'),
    # path('stk/', views.stk, name='stk'),

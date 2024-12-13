@@ -70,7 +70,7 @@ WSGI_APPLICATION = 'shopify.wsgi.application'
 
 DATABASES = {
     'default': {
-          'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'deeem',
         'USER': 'root',
         'PASSWORD': '',
@@ -79,6 +79,7 @@ DATABASES = {
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'" ,
             'charset': 'utf8mb4',# This addresses the MariaDB Strict Mode warning
+
         }
     }
 }

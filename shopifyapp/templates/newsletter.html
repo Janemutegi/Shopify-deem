@@ -76,63 +76,41 @@
     </style>
 </head>
 <body>
-
-<div class="main01 container" >
-     <form action="{% url 'register_success' %}" method="POST">
-              {% csrf_token %}
-
-
-    <div id="main" class="Newsletter_head bg-secondary text-center" >
-
-        <div id="Newsletter" ><br>
-         <legend>NEWSLETTER</legend>
-            <div class="Newsletter_image ">
-            <img  src="{% static 'img/spares5.png' %}">
-            </div>
-
-
-
-
-        </div>
-    </div>
-
-    <div id="name" class="Newsletter-image text-center d-flex p-5" ><br>
-        <div id="subscribe" class="newsletter-form">
-            <div class="newsletter-form2 " >
-
-                <label for="name">Name:</label>
-                <input type="text" id="name1" name="name" placeholder="Jane Doe" required="required">
-                <br>
-
-                <label id="email" for="email">E-mail address:</label>
-                <input type="email" id="email8" name="email" placeholder="abc@gmail.com" required="required">
-                <br>
-
-                <p id="wellnever">We'll never share your email with anyone else</p>
-
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" placeholder="+254 725 123456" required="required">
-                <br>
-
-                <label id="date" for="date">Date:</label>
-                <input type="datetime" name="datetime" class="form-control border-0 py-4" placeholder="Today's date" required="required" />
-                <br>
-            </div>
-            <div class="Newsletter_button " >
-                <br>
-
-
-                <button type="submit" class="subscribe_now" > Subscribe now </button>
+<div class="main01 container">
+    <form action="{% url 'register_success' %}" method="POST">
+        {% csrf_token %}
+        <div id="main" class="Newsletter_head bg-secondary text-center">
+            <div id="Newsletter"><br>
+                <legend>NEWSLETTER</legend>
+                <div class="Newsletter_image">
+                    <img src="{% static 'img/spares5.png' %}">
+                </div>
             </div>
         </div>
+        <div id="name" class="Newsletter-image text-center d-flex p-5"><br>
+            <div id="subscribe" class="newsletter-form">
+                <div class="newsletter-form2">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name1" name="name" placeholder="Jane Doe" required="required">
+                    <br>
+                    <label id="email" for="email">E-mail address:</label>
+                    <input type="email" id="email8" name="email" placeholder="abc@gmail.com" required="required">
+                    <br>
+                    <p id="wellnever">We'll never share your email with anyone else</p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+254 725 123456" required="required">
+                    <br>
+                   Removed date input field -->
 
-    </div>
+             </div>
+                <div class="Newsletter_button">
+                    <br>
+                    <button type="submit" class="subscribe_now">Subscribe now</button>
+                </div>
+            </div>
+        </div>
     </form>
-
-
-
 </div>
-
 
 </body>
 </html>

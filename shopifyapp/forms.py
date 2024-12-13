@@ -1,5 +1,5 @@
 from django import forms
-from shopifyapp.models import VehicleReport, LoginForms, CreateForm, ImageModel
+from shopifyapp.models import VehicleReport, LoginForms
 
 
 class ImageUploadForm(forms.ModelForm):
@@ -12,12 +12,3 @@ class LoginForm(forms.ModelForm):
         model = LoginForms
         fields = '__all__'
 
-class CreateForms(forms.ModelForm):
-    class Meta:
-        model = CreateForm
-        fields = '__all__'
-
-class ImageUploadForm(forms.ModelForm):
-    class Meta:
-        model = ImageModel
-        fields = '__all__'
